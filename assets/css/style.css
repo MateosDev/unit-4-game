@@ -1,0 +1,70 @@
+body {
+
+background="assets/images/cards.jpg"
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-position: center;
+}
+
+
+.container {
+    width: 80%;
+    margin-left: 2px;
+    text-align: center;
+    
+}
+
+.row {
+    margin-top: 10px;
+}
+
+#title-container{
+    width: 35%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#objective-points-container {
+    width: 19%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+}
+
+#records-container {
+    width: 15%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    margin-left: 1%;
+}
+
+
+
+.card-button {
+    text-align: center;
+
+    max-height: 215px;
+
+
+}
+
+#mind-stone {
+    margin-left: 4.166%;
+}
+
+#points-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.603);
+    color: white;
+    border: 1px solid white;
+    text-align: center;
+    margin: 0 auto;
+}
