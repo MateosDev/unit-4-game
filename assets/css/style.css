@@ -2,7 +2,6 @@ body {
 
 background="assets/images/cards.jpg"
 background-repeat: no-repeat;
-background-attachment: fixed;
 background-position: center;
 }
 
@@ -19,6 +18,8 @@ background-position: center;
 }
 
 #title-container{
+    
+    margin:auto;
     width: 35%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.603);
@@ -56,9 +57,7 @@ background-position: center;
 
 }
 
-#mind-stone {
-    margin-left: 4.166%;
-}
+
 
 #points-container {
     padding: 20px;
