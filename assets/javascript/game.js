@@ -28,13 +28,13 @@ function selectNewObjectivePoints() {
     setObjectivePointsContainer();
 }
 
-function selectNewStoneValues() {
-    mindStoneValue = Math.floor(Math.random()*12)+1;
-    powerStoneValue = Math.floor(Math.random()*12)+1;
-    realityStoneValue = Math.floor(Math.random()*12)+1;
-    soulStoneValue = Math.floor(Math.random()*12)+1;
-    spaceStoneValue = Math.floor(Math.random()*12)+1;
-    console.log(mindStoneValue + " " + powerStoneValue + " " + realityStoneValue + " " + soulStoneValue + " " + spaceStoneValue + " " + timeStoneValue);
+function selectNewCardValues() {
+    heartCardValue = Math.floor(Math.random()*12)+1;
+    spadeCardValue = Math.floor(Math.random()*12)+1;
+    diamondCardValue = Math.floor(Math.random()*12)+1;
+    clubCardValue = Math.floor(Math.random()*12)+1;
+    jokerCardValue = Math.floor(Math.random()*12)+1;
+    console.log(heartCardValue + " " + spadeCardValue + " " + diamondCardValue + " " + clubCardValue + " " + jokerCardValue );
 }
 
 function addPoints(n) {
@@ -46,7 +46,7 @@ function addPoints(n) {
         setRecordsContainer();
         playerPoints = 0;
         selectNewObjectivePoints();
-    selectNewStoneValues();
+    selectNewCardValues();
     }
 
     if(playerPoints > objectivePoints) {
@@ -55,33 +55,31 @@ function addPoints(n) {
         playerPoints = 0;
         setPointsContainer();
         selectNewObjectivePoints();
-        selectNewStoneValues();
+        selectNewCardValues();
     }
 }
 
-$("#mind-stone").click(function(){
-    addPoints(mindStoneValue);
+$("#heart-card").click(function(){
+    addPoints(heartCardValue);
 });
 
-$("#power-stone").click(function(){
-    addPoints(powerStoneValue);
+$("#spade-card").click(function(){
+    addPoints(spadeCardValue);
 });
 
-$("#reality-stone").click(function(){
-    addPoints(realityStoneValue);
+$("#diamond-card").click(function(){
+    addPoints(diamondCardValue);
 });
 
-$("#soul-stone").click(function(){
-    addPoints(soulStoneValue);
+$("#club-card").click(function(){
+    addPoints(clubCardValue);
 });
 
-$("#space-stone").click(function(){
-    addPoints(spaceStoneValue);
+$("#joker-card").click(function(){
+    addPoints(jokerCardValue);
 });
 
-$("#time-stone").click(function(){
-    addPoints(timeStoneValue);
-});
+
 
 selectNewObjectivePoints();
-selectNewStoneValues();
+selectNewCardValues();
